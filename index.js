@@ -35,13 +35,6 @@ app.get("/etat/:etat/ville/:ville", function(req, res){
 })
 
 
-app.get("*", function(req, res){
-  res.redirect("/")
-  alert("Bad request, 404 error")
-  });
-
-
-
 app.get("/etat/:etat", function(req, res){
     let state = req.params.etat;
     var info_state = root_state_covid.root_state_covid(state);
