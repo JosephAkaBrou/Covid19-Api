@@ -57,7 +57,7 @@ app.get("/state_list", function(req, res){
 })
 
 app.get("*", function(req, res){
-  res.sendFile(__dirname + "/public/index.html")
+  res.sendFile(__dirname + "/")
   alert("Bad request, Erreur 404")
   });
 
